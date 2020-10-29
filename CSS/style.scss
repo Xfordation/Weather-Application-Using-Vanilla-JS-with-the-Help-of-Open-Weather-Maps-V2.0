@@ -1,0 +1,144 @@
+@import "var";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-transform: uppercase;
+}
+body {
+  line-height: 1.5;
+  background-color: #dbdada;
+  font-family: "Poppins";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.1rem;
+  padding: 0.5rem;
+  line-height: 1.2;
+}
+@import "util";
+@import "animation";
+.weather-box {
+  background-color: currentColor;
+  box-shadow: 9px 7px 40px -6px rgba(0, 0, 0, 0.25);
+  position: relative;
+  width: 42%;
+}
+.city {
+  transition: all 2s;
+  padding: 0.6rem;
+  text-align: center;
+  .table {
+    padding: 0.6rem;
+    width: 100%;
+  }
+  .cityname {
+    padding: 5px;
+    text-decoration: none;
+    margin-top: 0.8rem;
+  }
+  .desc {
+    text-decoration: none;
+    margin-top: -5px;
+  }
+  .weather-condition {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+  }
+  .temp {
+    color: $light-color-A;
+    text-decoration: none;
+    margin-top: -5px;
+    text-align: center;
+    margin-left: 1rem;
+  }
+  table {
+    cursor: default;
+    width: 100%;
+    text-align: left;
+    color: $light-color-A;
+    border-collapse: collapse;
+
+    th {
+      text-align: left;
+      font-family: "Poppins";
+      font-size: 1rem;
+      text-decoration: none;
+      padding: 0.6rem;
+    }
+    td {
+      padding: 10px;
+      border-bottom: 2px solid $light-color-D;
+    }
+  }
+}
+
+// Navbar
+.nav {
+  display: none;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  text-decoration: none;
+  width: 100%;
+  justify-content: space-between;
+}
+
+// aside
+.git {
+  width: 100%;
+  display: flex;
+  padding: 0.5rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  .fa-color {
+    color: $light-color-D;
+  }
+  .fa-color:hover {
+    color: #6e5494;
+  }
+  span:hover {
+    cursor: default;
+    color: #6e5494;
+  }
+}
+
+//Hourly Info
+.hourly-info {
+  margin: auto;
+  width: 100%;
+  table {
+    border: none;
+    // note CHange Color Later of the Border
+    border-top: 2px solid $dark-color-B;
+    border-bottom: 2px solid $dark-color-B;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+
+    th,
+    td {
+      border: none;
+      padding: 1rem;
+    }
+  }
+}
+
+/* Scroll-bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

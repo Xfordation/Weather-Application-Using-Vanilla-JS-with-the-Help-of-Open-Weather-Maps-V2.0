@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Custom Css-->
+    <link rel="stylesheet" href="./CSS/style.css" />
+
+    <!-- Responsive Css -->
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="./CSS/responsive.css"
+    />
+
+    <!--Icons-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon Link -->
+    <link rel="shortcut icon" type="image/x-icon" href="./Images/logo.png" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Application | Rosesso</title>
+  </head>
+  <body>
+    <!-- Weather Box -->
+    <section class="weather-box container">
+      <!-- Navigation -->
+      <nav class="nav" id="nav">
+        <button class="btn btn-secondary" id="remove">
+          Remove
+          <i class="large material-icons">remove_circle_outline</i>
+        </button>
+      </nav>
+
+      <!-- Header -->
+      <h2 class="text-light text-family-Nunito" id="header">
+        Check Weather In your own City
+      </h2>
+      <form id="frm1">
+        <div class="alert text-family-Nunito" id="alert"></div>
+        <div class="form-group">
+          <input
+            type="text"
+            name="t1"
+            id="t1"
+            placeholder="Enter your City name"
+            class="form-element text-light text-family-Nunito"
+            autocomplete="off"
+          />
+        </div>
+        <div class="form-group">
+          <button id="sub" class="btn btn-primary text-family-Nunito">
+            Check
+          </button>
+        </div>
+      </form>
+
+      <!-- Table for Displaying Weather Conditions -->
+      <div class="city" id="city"></div>
+
+      <!-- Footer -->
+      <aside class="git">
+        <span class="text-light text-small text-family-Nunito">
+          <span class="text-micro text-light text-family-Nunito"
+            >Created by:Xfordation &COPY;
+          </span>
+          V2.0
+          <a
+            href="https://github.com/Xfordation?tab=repositories"
+            target="_blank"
+            ><i class="fa fa-github fa-2x fa-color" aria-hidden="true"></i></a
+        ></span>
+      </aside>
+    </section>
+
+    <!-- jQuery/Gsap/Snap-svg -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="./JS/weatherfetch.js"></script>
+    <script src="./JS/weatherUI.js"></script>
+    <script src="./JS/main.js"></script>
+  </body>
+</html>

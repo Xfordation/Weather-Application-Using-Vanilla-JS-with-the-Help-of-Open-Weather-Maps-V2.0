@@ -1,0 +1,144 @@
+.container {
+  padding: 1rem 2rem;
+  margin: 3rem auto;
+}
+
+.text-light {
+  color: #eee;
+}
+
+.text-small {
+  font-size: 0.7rem;
+}
+
+.text-micro {
+  font-size: 0.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-large {
+  font-size: 3rem;
+}
+
+.text-family-Nunito {
+  font-family: "Nunito Sans";
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.form-group {
+  padding: 0.5rem 1.5rem;
+}
+
+.form-element {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #eee;
+  width: 50%;
+  padding: 0.5rem;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+.form-element:focus {
+  border-bottom: 2px solid #02ffffb3;
+}
+
+.btn {
+  padding: 0.5rem 2rem;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: transparent;
+  color: #02ffffb3;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+  padding: 0.9rem 2.9rem;
+}
+
+.btn-primary:hover {
+  -webkit-box-shadow: 0 6px 15px rgba(9, 255, 255, 0.9);
+          box-shadow: 0 6px 15px rgba(9, 255, 255, 0.9);
+  background-color: #02ffffb3;
+  color: #fefefe;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #4285f4;
+}
+
+.btn-secondary:hover {
+  opacity: 0.8;
+}
+
+.alert {
+  background-color: rgba(255, 0, 0, 0.856);
+  color: #fefefe;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  width: 50%;
+  border: none;
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.weather-box {
+  width: 80%;
+}
+
+@media (max-width: 610px) {
+  .weather-box {
+    width: 100%;
+  }
+  #header {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .form-element {
+    width: 70%;
+  }
+  .btn {
+    width: 60%;
+  }
+  .alert {
+    width: 80%;
+    font-size: 0.8rem;
+  }
+  .hourly-info {
+    margin: auto;
+    width: 100%;
+  }
+  .hourly-info table {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    border: none;
+  }
+  .hourly-info table th,
+  .hourly-info table td {
+    font-size: 0.2rem;
+    border: none;
+    padding: 0.3rem;
+  }
+  .hourly-info table th img,
+  .hourly-info table td img {
+    margin: auto;
+    text-align: center;
+    margin-left: -0.5rem;
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

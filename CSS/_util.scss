@@ -1,0 +1,76 @@
+// Utility Classes
+.container {
+  padding: 1rem 2rem;
+  margin: 3rem auto;
+}
+.text-light {
+  color: $light-color-C;
+}
+.text-small {
+  font-size: 0.7rem;
+}
+.text-micro {
+  font-size: 0.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.text-center {
+  text-align: center;
+}
+.text-large {
+  font-size: 3rem;
+}
+.text-family-Nunito {
+  font-family: "Nunito Sans";
+}
+.margin-auto {
+  margin: auto;
+}
+.form-group {
+  padding: 0.5rem 1.5rem;
+}
+.form-element {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid $light-color-C;
+  width: 50%;
+  padding: 0.5rem;
+  transition: all ease-in-out 0.5s;
+  &:focus {
+    border-bottom: 2px solid $primary-color-A;
+  }
+}
+.btn {
+  padding: 0.5rem 2rem;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  &-primary {
+    background-color: transparent;
+    color: $primary-color-A;
+    transition: all ease-in-out 0.5s;
+    padding: 0.9rem 2.9rem;
+    &:hover {
+      box-shadow: 0 6px 15px rgba(9, 255, 255, 0.9);
+      background-color: $primary-color-A;
+      color: $light-color-A;
+    }
+  }
+  &-secondary {
+    background-color: transparent;
+    color: $secondary-color-A;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+.alert {
+  background-color: rgba(255, 0, 0, 0.856);
+  color: $light-color-A;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  width: 50%;
+  border: none;
+  display: none;
+  justify-content: space-between;
+}

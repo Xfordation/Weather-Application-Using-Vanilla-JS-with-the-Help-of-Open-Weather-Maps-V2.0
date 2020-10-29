@@ -1,0 +1,49 @@
+@import "var";
+@import "util"; // For Ipad
+.weather-box {
+  width: 80%;
+}
+
+// IponeX/7/8
+@media (max-width: 610px) {
+  .weather-box {
+    width: 100%;
+  }
+  #header {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .form-element {
+    width: 70%;
+  }
+  .btn {
+    width: 60%;
+  }
+  .alert {
+    width: 80%;
+    font-size: 0.8rem;
+  }
+
+  .hourly-info {
+    margin: auto;
+    width: 100%;
+    table {
+      margin: auto;
+      text-align: center;
+      width: 100%;
+      border: none;
+      th,
+      td {
+        font-size: 0.2rem;
+        border: none;
+        padding: 0.3rem;
+        img {
+          margin: auto;
+          text-align: center;
+          margin-left: -0.5rem;
+          width: 50%;
+        }
+      }
+    }
+  }
+}
